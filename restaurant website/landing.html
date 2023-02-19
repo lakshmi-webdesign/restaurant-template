@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>landing</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="font/flaticon.css">
+
+
+<style>
+    .logo {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  position:absolute;
+  z-index: 0;
+  top: 10%;
+  margin-bottom: 1%;
+  height: 100px;
+  
+    }
+
+.navbar-nav li a{
+  font-size:18px;
+  font-weight: 500;
+  color: rgba(255,255,255,1);
+}
+
+.navbar{
+  display: flex;
+  flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+body{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+@media only screen and (max-width: 1076px) {
+  .logo{
+   position: relative;
+  }
+}
+
+li { 
+  position: relative; 
+  padding-right: 30px;
+}
+
+.nav-link{
+ 
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.nav-link::after { 
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background:#8a7252;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  
+}
+
+.nav-link:hover::after { 
+  width: 100%; 
+  left: 0; 
+  
+}
+
+.nav-item.active{
+  
+  border-bottom: 4px solid #8a7252!important;
+}
+
+.slide{
+  background-repeat: no-repeat; 
+        background-size: cover; 
+        background-position: center;
+        width: 100%; 
+        height: 100%;
+}
+
+.menu-content h4{
+  text-transform:capitalize;
+        font-size:22px;
+        border-bottom:1px dashed #333;
+        margin-bottom:5px;
+        padding-bottom:5px;
+}
+
+.menu-content span{
+  float:right;
+  color:#6cad4e;
+  font-style:italic;
+}
+
+
+.roww {
+				display: -ms-flexbox; 
+			    display: flex;
+			    -ms-flex-wrap: wrap; 
+			    flex-wrap: wrap;
+			    padding: 0 10px;
+			}
+
+			
+.columnn {
+  -ms-flex: 25%;
+   flex: 25%;
+   max-width: 25%;
+   padding: 0 25px;
+	}
+
+.columnn img {
+  margin-top: 20px;
+  vertical-align: middle;
+	width: 100%;
+			}
+
+			
+@media screen and (max-width: 800px) {
+	.columnn {
+	 -ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+		}
+	}
+
+			
+	@media screen and (max-width: 600px) {
+		.columnn {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+		}
+	}
+
+  .zoom:hover {
+	transform: scale(1.25);
+}
+  .zoom{
+  	transition: transform .2s; 
+  	margin: 0 auto;
+  	}
+  				
+
+</style>
+
+</head>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+
+<body style="font-family:'PT Sans Narrow'">
+ 	<nav class="navbar navbar-expand-lg navbar-dark navbar-custom " style="background-color: rgba(0, 0, 0, 1);padding: 30px 30px 15px 30px;">
+		
+    <div class="logo" style="background-color: black;">
+      <a href="#">
+        <div style="font-size: 35px;line-height: 0.75;color: #FFFFFF;font-family: 'PT Sans Narrow', sans-serif;text-align: center;">The ABC</div>
+        <div style="font-size: 17px;text-transform: uppercase;color: #FFFFFF;letter-spacing: 0.680em;line-height: 0.75;margin-top: 12px;padding-left: 8px">restaurant</div>
+        <div style="margin-top: 12px;"><img style="width: inherit;height: 40px;padding-left: 14px;" src="images/divider.png"></div>
+      </a>
+    </div>
+    
+    <div class="container-fluid " id="navbarResponsive" >
+
+      <button class="navbar-toggler col" type="button" data-toggle="collapse" data-target="#navbarResponsive" style="border-color: #ffffff;background-color: rgb(0, 0, 0);margin: 3%;">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+  
+
+		<div class="collapse navbar-collapse " id="navbarResponsive" style="margin-top: 4%;border: 1px solid #8a7252;text-align: center;">
+
+		<ul class="navbar-nav" >
+			<li class="nav-item " >
+			  <a class="nav-link" href="#aboutus" style="color: rgba(255,255,255,1);">ABOUT US</a>
+			</li>
+      <li class="nav-item" >
+			  <a class="nav-link" href="#menu" style="color: rgba(255,255,255,1);">MENU</a>
+			</li>
+      <li class="nav-item"  >
+			  <a class="nav-link" href="#reservation" style="color: rgba(255,255,255,1);">RESERVATION</a>
+			</li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto mb-auto" > 
+      <li class="nav-item" >
+			  <a class="nav-link" href="blog.html" style="color: rgba(255,255,255,1);">BLOG</a>
+			</li>
+		   <li class="nav-item" >
+			  <a class="nav-link" href="#gallery" style="color: rgba(255,255,255,1);">GALLERY</a>
+			</li>
+      <li class="nav-item"  >
+			  <a class="nav-link" href="contact.html" style="color: rgba(255,255,255,1);">CONTACT</a>
+			</li>
+      </ul>
+      </div>
+    </div>
+ </nav> 
+
+<section id="myCarousel" class="carousel slide" data-ride="carousel" >
+  
+    <ul class="carousel-indicators" >
+      <li data-target="#myCarousel" data-slide-to="0" class="active" style="background-color: #8a7252;"></li>
+      <li data-target="#myCarousel" data-slide-to="1" style="background-color: #8a7252;" ></li>
+      <li data-target="#myCarousel" data-slide-to="2" style="background-color: #8a7252;"></li>
+    </ul>
+    
+    <div class="carousel-inner justify-content-center" >
+
+      <div class="carousel-item active" >
+        <div class="slide" style="background-image: url(images/h5-sl1.jpg); ">
+          <div class="container" id= "main" style="color:rgb(0, 0, 0);padding-bottom:5%;padding-top: 5%;">
+            <div class="row  pl-0 mt-0 pt-0" >
+                    <div class="col-md-6" style="text-align: left;">
+          
+                      <h2 style="font-size: 40px;color:#8a7252 ;">Dining , Menu's</h2>
+                        <h2 style="font-size:40px;color:#8a7252;">& Functions</h2>
+                        
+                        <div  style="font-size:25px;">Going to the theatre or don't have time for lunch?
+                          Consider pre ordering your meals
+                        </div>
+                           
+                      </div>    
+        
+            </div>   
+            </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" >
+        <div class="slide" style="background-repeat: no-repeat; 
+        background-image: url(images/h5-sl3.jpg);" >
+          <div class="container" id= "main" style="color:rgb(0, 0, 0);padding-bottom:5%;padding-top: 5%;">
+            <div class="row pl-0 mt-0 pt-0" >
+
+              <div class="col-md-6" style="text-align: left;" ></div>
+              <div class="col-md-6" style="text-align: right;" >
+          
+                <h2 style="font-size: 40px;color:#8a7252 ;">The Best Cafe</h2>
+                  <h2 style="font-size:40px;color:#8a7252;">& Restaurant</h2>
+                  
+                  <div  style="font-size:25px;">We would be delighted to tailor a menu to suit your requirements.
+                  </div>
+                     
+                </div>    
+                    
+                        
+            </div>   
+            </div>
+        </div>
+      </div>
+
+      <div class="carousel-item " >
+        <div class="slide" style="background-repeat: no-repeat; 
+        background-image: url(images/h5-sl2.jpg) ">
+        <div class="container" id= "main" style="color:rgb(0, 0, 0);padding-bottom:5%;padding-top: 5%;">
+          <div class="row pl-0 mt-0 pt-0" >
+
+            <div class="col-md-6" style="text-align: left;" ></div>
+            <div class="col-md-6" style="text-align: right;" >
+        
+              <h2 style="font-size: 40px;color:#8a7252 ;">There's Always</h2>
+                <h2 style="font-size: 40px;color:#8a7252 ;">a Story Behind</h2>
+                
+                <div  style="font-size:25px;">100+ chefs from more than 15 countries in the world,their Success stories and Recipes.
+                </div>
+                   
+              </div>    
+                  
+                      
+          </div>   
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev" >
+      <span class="carousel-control-prev-icon" style="background-color: black;"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+      <span class="carousel-control-next-icon" style="background-color: black;"></span>
+    </a>
+</section>
+
+<section class="aboutus pt-5 " style="background-color: rgb(0, 0, 0);" id="aboutus">
+  
+  <div style="background-color: black;text-align: center;">
+    <div style="font-size: 35px;line-height: 0.75;color: #FFFFFF;font-family: 'PT Sans Narrow';">ABOUT US</div>
+    <div class="col-center"  style="margin-top: 12px;">
+      <img style="width:inherit ;height: 40px;" 
+      src="images/divider.png">
+    </div>
+</div>
+
+  <div class="row m-0 p-4" >
+   
+    <div class="col-md-6 p-0 mb-5 pb-5" style="background-color: rgb(0, 0, 0);width: 100%;">
+      <div class="lowerdiv " style="background-color: transparent;width: 70%;height: 65%;border: 2px solid #8a7252;top: 0%;position: absolute;z-index: 0;">
+      </div>
+      <div class="pr-2" style="top: 5%;left: 5%;position: relative;">
+        <img class="img-fluid" src="images/h2-img1.png" >
+      </div>
+
+    </div>
+
+    <div class="col m-0 pl-4"  >
+
+      <h2 style="font-size: 40px;color:#8a7252 ;">Elegance. Energy. </h2>
+        <h2 style="font-size:40px;color:#8a7252;">Innovation.</h2>
+        
+        <div style="font-size:22px;color: rgb(255, 255, 255);">Nestled within one of Mumbai’s old textile mills, 
+          The ABC is an ingredient-driven restaurant.<br>
+          The restaurant’s 14-course chef’s tasting menus - a first of its kind in India – marry tradition and innovation
+          as the seasons change, so do the menus, defined by ingredients from the restaurant’s farm, foraging trips, and a network of local farmers.
+          Each kitchen is led by a talented chef whose passion lies in creating uniquely rooted yet modern dishes.<br><br>
+          With international outposts in some of the world’s most vibrant cities, 
+          The ABC's menu is a culinary balance of signature dishes available at any The ABC's 
+          location and dishes curated with local tastes and traditions in mind.
+        </div>
+           
+    </div>
+        
+
+  </div>
+</section>
+
+<div class="easytoorder mb-5 mt-5" id="easy to order" style="color: rgb(255, 255, 255);font-size: 22px;">
+	<div class="container" style="background-color:#8a7252;">
+		<div class="row">
+
+		<div class="col-md-4">
+		<div class="d-block text-center block-6 ">
+		<div class="d-flex justify-content-center align-items-center mb-5">
+		<span class="flaticon-choices" ></span>
+		</div>
+		<div >
+		<h3 class="heading">Easy to Order</h3>
+		<p style="font-size: 20px;">Getting food delivered right at your doorstep anytime anywhere is easier than ever.</p>
+		</div>
+		</div>
+		</div>
+
+		<div class="col-md-4">
+		<div class="d-block text-center block-6 ">
+		<div class="d-flex justify-content-center align-items-center mb-5">
+		<span class="flaticon-delivery-man"></span>
+		</div>
+		<div >
+		<h3 class="heading">Fastest Delivery</h3>
+		<p>For the times when you’re busy and too time-cramped to step out for lunch, We are here for you.</p>
+		</div>
+		</div>
+		</div>
+		<div class="col-md-4">
+		<div class="d-block text-center block-6">
+		<div class="d-flex justify-content-center align-items-center mb-5">
+		<span class="flaticon-tray"></span>
+	    </div>
+		<div >
+		<h3 class="heading">Quality Food</h3>
+		<p>We set a high standard for our food quality with quality ingredients and an experienced cook.
+		</p>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+</div>
+
+<section class="menu pt-5 pb-5 pl-2 pr-2" id="menu" style="background-color: black;font-size: 20px;">
+
+  <div style="background-color: black;text-align: center;">
+    <div style="font-size: 35px;line-height: 0.75;color: #FFFFFF;font-family: 'PT Sans Narrow';">MENU</div>
+    <div class="col-center"  style="margin-top: 12px;">
+      <img style="width:inherit ;height: 40px;" 
+      src="images/divider.png">
+    </div>
+</div>
+
+ <div class="container col-md-11 " style="border: 2px solid #8a7252;">
+   <div class="col-md-12 p-0">
+    <nav class="p-0">
+      <div class="nav nav-fill" id="nav-tab" >
+          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"  aria-controls="nav-home" style="color: rgba(255,255,255,1);">Main Course</a>
+          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"  aria-controls="nav-profile" style="color: rgba(255,255,255,1);">Appetizers</a>
+          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"  aria-controls="nav-contact" style="color: rgba(255,255,255,1);">Beverages</a>
+          <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about"  aria-controls="nav-about" style="color: rgba(255,255,255,1);">Deserts</a>
+     </div>
+    </nav>
+
+  <div class="tab-content py-3 px-3 px-sm-0 " id="nav-tab-content">
+
+    <div class="tab-pane maincourse fade show active" id="nav-home" aria-labelledby="nav-home-tab" style="color: rgba(255,255,255,1);">
+     
+    <div class="d-sm-flex"> 
+    <div class="col-md-6">
+      <div class="menu-content" >
+        <h4>Shahi Paneer<span >₹150</span></h4>
+        <p>Made with paneer in a thick cream and tomato gravy and spices</p>
+    </div>
+
+    <div class="menu-content" >
+      <h4>Biryani<span >₹150</span></h4>
+      <p>Mixed rice dish, optional spices, optional vegetables, meats or seafood. Can be served with plain yogurt..</p>
+  </div>
+
+  <div class="menu-content" >
+    <h4>Gobhi matar<span >₹150</span></h4>
+    <p>Cauliflower in a tomato sauce</p>
+</div>
+
+<div class="menu-content" >
+  <h4>Butter chicken<span >₹150</span></h4>
+  <p>chicken in a mildly spiced tomato sauce. It is also known as murgh mahal</p>
+</div>
+    </div>    
+
+    <div class="col-md-6">
+      <div class="menu-content" >
+        <h4>Aloo gobi<span >₹150</span></h4>
+        <p>Cauliflower with potatoes sautéed with garam masala, turmeric, sometimes kalonji and curry leaves.</p>
+    </div>
+
+    <div class="menu-content" >
+      <h4>Rajma chaval <span >₹150</span></h4>
+      <p>a Kidney beans curry with rice</p>
+  </div>
+
+  <div class="menu-content" >
+    <h4>Navrattan korma<span >₹150</span></h4>
+    <p>Vegetables, Nuts, Paneer Cheese in a tomato cream sauce</p>
+</div>
+
+<div class="menu-content" >
+  <h4>Methi saag<span >₹150</span></h4>
+  <p>Veggie leaves sauteed in oil and garlic with little masalas.</p>
+</div>
+    </div>  
+    </div>
+
+    </div> 
+
+    <div class="tab-pane Appetizers fade " id="nav-profile"  aria-labelledby="nav-profile-tab" style="color: rgba(255,255,255,1);">
+      
+      <div class="d-sm-flex"> 
+        <div class="col-md-6">
+          <div class="menu-content" >
+            <h4>Samosa<span >₹150</span></h4>
+            <p>Potatoes, onions, peas, coriander, and lentils, may be served with a mint or tamarind sauce</p>
+        </div>
+    
+        <div class="menu-content" >
+          <h4>Kachori<span >₹150</span></h4>
+          <p>a round ball made of flour and dough filled with a stuffing of yellow moong dal, black pepper, red chili powder, and ginger paste.</p>
+      </div>
+    
+      <div class="menu-content" >
+        <h4>Chaat<span >₹150</span></h4>
+        <p>containing potato patty fried in oil, topped with sweet yogurt, and other sauces and spices</p>
+    </div>
+    
+    <div class="menu-content" >
+      <h4>Bhel Puri<span >₹150</span></h4>
+      <p>made of puffed rice, vegetables and a tangy tamarind sauce, and has a crunchy texture.</p>
+    </div>
+        </div>    
+    
+        <div class="col-md-6">
+          <div class="menu-content" >
+            <h4>Dabeli<span >₹150</span></h4>
+            <p> a sweet snack made by mixing boiled potatoes with a special dabeli masala, putting the mixture in a ladi pav (burger bun),</p>
+        </div>
+    
+        <div class="menu-content" >
+          <h4>Dhokla<span >₹150</span></h4>
+          <p>Made with a fermented batter derived from rice and split urad dal.[</p>
+      </div>
+    
+      <div class="menu-content" >
+        <h4>Mirchi vada<span >₹150</span></h4>
+        <p>spicy Indian snack consisting of chili (mirchi ) and potato or cauliflower stuffing battered and fried, served hot with tomato sauce</p>
+    </div>
+    
+    <div class="menu-content" >
+      <h4>Pyaaj Kachori<span >₹150</span></h4>
+      <p>a fried pastry filled with a spicy onion filling.</p>
+    </div>
+        </div>  
+      </div>
+
+    </div>
+
+    <div class="tab-pane beverages fade" id="nav-contact"  aria-labelledby="nav-contact-tab" style="color: rgba(255,255,255,1);">
+      <div class="d-sm-flex"> 
+        <div class="col-md-6">
+          <div class="menu-content" >
+            <h4>Aam panna <span >₹150</span></h4>
+            <p>made from raw mango</p>
+        </div>
+    
+        <div class="menu-content" >
+          <h4>Thandai<span >₹150</span></h4>
+          <p>cold drink prepared with a mixture of almonds, fennel seeds, watermelon kernels, rose petals, pepper, poppy seeds, cardamom, saffron, milk and sugar.</p>
+      </div>
+    
+      <div class="menu-content" >
+        <h4>Sharjah Shake<span >₹150</span></h4>
+        <p>A sweet, cold beverage made from Milk, Horlicks/other malt powders and njalipoovan.</p>
+    </div>
+    
+    <div class="menu-content" >
+      <h4>Lassi<span >₹150</span></h4>
+      <p>a blend of yogurt, water, spices and sometimes fruit</p>
+    </div>
+        </div>    
+    
+        <div class="col-md-6">
+          <div class="menu-content" >
+            <h4>Jigarthanda<span >₹150</span></h4>
+            <p>includes milk, almond gum, sarsaparilla root syrup, sugar and ice-cream.</p>
+        </div>
+    
+        <div class="menu-content" >
+          <h4>Jal-jeera<span >₹150</span></h4>
+          <p>consists of cumin, ginger, black pepper, mint, black salt, some fruit powder (</p>
+      </div>
+    
+     
+        </div>  
+      </div>
+    </div>
+
+    <div class="tab-pane desert fade" id="nav-about"  aria-labelledby="nav-about-tab" style="color: rgba(255,255,255,1);">
+      <div class="d-sm-flex"> 
+        <div class="col-md-6">
+          <div class="menu-content" >
+            <h4>Gajar ka Halwa <span >₹150</span></h4>
+            <p>sweet dish with Carrot, Milk, Ghee, Cashew.</p>
+        </div>
+    
+        <div class="menu-content" >
+          <h4>Rosgulla<span >₹150</span></h4>
+          <p>A dessert with cottage cheese, flour and sugar syrup.</p>
+      </div>
+    
+      <div class="menu-content" >
+        <h4>Jalebi<span >₹150</span></h4>
+        <p>twisted noodle like sweet dish dipped in sugary syrup</p>
+    </div>
+    
+    <div class="menu-content" >
+      <h4>Gulab Jamun<span >₹150</span></h4>
+      <p>a milk-solid-based sweet </p>
+    </div>
+        </div>    
+    
+        <div class="col-md-6">
+          <div class="menu-content" >
+            <h4>Sooji Halwa<span >₹150</span></h4>
+            <p>Semolina cooked with clarified butter and dry fruits.</p>
+        </div>
+    
+        <div class="menu-content" >
+          <h4> kesar petha<span >₹150</span></h4>
+          <p>A ravioli like dessert stuffed with kesar fillings</p>
+      </div>
+    
+      <div class="menu-content" >
+        <h4>Shahi tukra<span >₹150</span></h4>
+        <p>a bread pudding in a rich sauce of thickened milk, garnished with sliced almonds</p>
+    </div>
+    
+    <div class="menu-content" >
+      <h4>Phirni<span >₹150</span></h4>
+      <p>a rice Pudding</p>
+    </div>
+        </div>  
+      </div>
+    </div>
+
+</div>
+</div>
+ </div>
+
+ <div class="pt-5 ml-5 mr-5">
+  <input type="submit" value="Check out More" id="submit" class="form-control " style="font-size: 24px;font-weight: 600;color: #000000;border: 3px solid #8a7252;">
+  </div>
+
+
+</section>
+
+<section class="reservation align-items-center " id="reservation">
+<div class="row m-0 d-sm-flex flex-sm-row">
+  <div class=" col-md-6 p-4 pt-5" style="font-size: 20px;">
+
+    <div style="text-align: center;align-items: center;">
+      <div style="font-size: 35px;line-height: 0.75;color: #8a7252;font-family: 'PT Sans Narrow';">Book Your Table</div>
+      <div class="col-center "  style="margin-top: 12px;">
+        <img style="width:200px;height: 40px;" 
+        src="images/divider.png">
+      </div>
+  </div>
+  
+    <div class="container p-3" style="border: 1px solid #8a7252 ;">
+      
+      <div class="pt-2" >
+        <label for="username">Name :</label>
+            <input class="form-control" type="text" name="fname" id="fname"  placeholder="Full name" >                     
+      </div>
+
+      <div class="pt-2" >
+        <label for="Email_id">Email ID: </label>
+        <input type="email" class="form-control" name="Email_id" id="Email_id" placeholder="Email Address" >                     
+      </div>
+    
+
+  <div class="d-sm-flex flex-sm-row pt-2 pb-0" >
+
+  <div class="col-md-4  pl-0 " >
+    <label>No of People :</label>
+    <div>
+      <select name="day" id="day" class="day form-control ">
+          <option value="">Number of People</option>
+          <option value="1"> 1 </option>
+          <option value="2"> 2 </option>
+          <option value="3"> 3 </option>
+          <option value="4"> 4 </option>
+          <option value="5"> 5 </option>
+          <option value="6"> 6 </option>
+          <option value="7"> 7 </option>
+          <option value="8"> 8 </option>
+          <option value="9"> 9 </option>
+          <option value="10"> 10 </option>
+         
+      </select>
+    </div>
+    </div>
+
+    <div class="pl-0 col-md-8 ">
+      <label>Date : </label>
+    <div class="d-flex p-0 col-md-12 ">
+        <div class="pr-1 pl-0 col-md-4 " >
+            <select name="day" id="day" class="day form-control ">
+                <option value="">DD</option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+                <option value="6"> 6 </option>
+                <option value="7"> 7 </option>
+                <option value="8"> 8 </option>
+                <option value="9"> 9 </option>
+                <option value="10"> 10 </option>
+                <option value="11"> 11 </option>
+                <option value="12"> 12 </option>
+                <option value="13"> 13 </option>
+                <option value="14"> 14 </option>
+                <option value="15"> 15 </option>
+                <option value="16"> 16 </option>
+                <option value="17"> 17 </option>
+                <option value="18"> 18 </option>
+                <option value="19"> 19 </option>
+                <option value="20"> 20 </option>
+                <option value="21"> 21 </option>
+                <option value="22"> 22 </option>
+                <option value="23"> 23 </option>
+                <option value="24"> 24 </option>
+                <option value="25"> 25 </option>
+                <option value="26"> 26 </option>
+                <option value="27"> 27 </option>
+                <option value="28"> 28 </option>
+                <option value="29"> 29 </option>
+                <option value="30"> 30 </option>
+                <option value="31"> 31 </option>
+            </select>
+        </div>
+
+        <div class="pr-1 col-md-4 ">
+            <select class="month form-control " name="month" id="month">
+                <option value="">MM</option>
+                <option value="January"> January </option>
+                <option value="February"> February </option>
+                <option value="March"> March </option>
+                <option value="April"> April </option>
+                <option value="May"> May </option>
+                <option value="June"> June </option>
+                <option value="July"> July </option>
+                <option value="August"> August </option>
+                <option value="September"> September </option>
+                <option value="October"> October </option>
+                <option value="November"> November </option>
+                <option value="December"> December </option>
+             </select>
+        </div>
+
+        <div class="pr-1 col-md-4 ">
+            <select class="year form-control " name="year" id="year">
+                <option value="">YY</option>
+                <option value="1990"> 1990 </option>
+                <option value="1990"> 1991 </option>
+                <option value="1990"> 1992 </option>
+                <option value="1990"> 1993 </option>
+                <option value="1990"> 1994 </option>
+                <option value="1990"> 1995 </option>
+                <option value="1990"> 1996 </option>
+                <option value="1990"> 1997 </option>
+                <option value="1990"> 1998 </option>
+                <option value="1990"> 1999 </option>
+                <option value="1990"> 2000 </option>
+                <option value="1990"> 2001 </option>
+                <option value="1990"> 2002 </option>
+                <option value="1990"> 2003 </option>
+                <option value="1990"> 2004 </option>
+                <option value="1990"> 2005 </option>
+                <option value="1990"> 2006 </option>
+                <option value="1990"> 2007 </option>
+                <option value="1990"> 2008 </option>
+                <option value="1990"> 2009 </option>
+                <option value="1990"> 2010 </option>
+                <option value="1990"> 2011 </option>
+                <option value="1990"> 2012 </option>
+                <option value="1990"> 2013 </option>
+                <option value="1990"> 2014 </option>
+                <option value="1990"> 2015 </option>
+                <option value="1990"> 2016 </option>
+                <option value="1990"> 2017 </option>
+                <option value="1990"> 2018 </option>
+                <option value="1990"> 2019 </option>
+                <option value="1990"> 2020 </option>
+                <option value="1990"> 2021 </option>
+             </select>
+        </div>
+    </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="d-sm-flex flex-sm-row pt-2" >
+
+    <div class=" col-md-6 mb-4 pl-0 " >
+      <label>Time :</label>
+      <div>
+        <select name="day" id="day" class="day form-control ">
+            <option value="">Choose Time Slot</option>
+            <option value="1"> 9am </option>
+            <option value="2"> 10am </option>
+            <option value="3"> 11am </option>
+            <option value="4"> 12am </option>
+            <option value="5"> 1pm </option>
+            <option value="6"> 2pm </option>
+            <option value="7"> 3pm </option>
+            <option value="8"> 4pm </option>
+            <option value="9"> 5pm </option>
+            <option value="10"> 6pm </option>
+           
+        </select>
+      </div>
+      </div>
+  
+      <div class="pl-0 col-md-6 ">
+        <label>Contact number : </label>
+        <input type="text" class="form-control" name="Phoneno" id="Phoneno" placeholder="Phone Number" >
+  
+      </div>
+  
+    </div>
+
+</div>
+
+    <div class="pt-5 ">
+      <input type="submit" value="SEND" id="submit" class="form-control " style="font-size: 20px;font-weight: 600;color: #8a7252;border: 3px solid #8a7252;">
+      </div>
+
+  </div>
+
+<!--  <div class="col-md-6" ><img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fHJlc3RhdXJhbnR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" class="img-fluid col" ></div>-->
+<div class="col-md-6" ><img src="images/download.jpg" class="img-fluid col" style="height: 100%;"></div>
+
+</div>
+</section>
+
+<section class="gallery pt-5 pb-5 pl-2 pr-2" id="gallery" style="background-color: black;">
+
+  <div style="text-align: center;">
+    <div style="font-size: 35px;line-height: 0.75;color: #ffffff;font-family: 'PT Sans Narrow';">GALLERY</div>
+    <div class="col-center"  style="margin-top: 12px;">
+      <img style="width:inherit ;height: 40px;" 
+      src="images/divider.png">
+    </div>
+</div>
+
+  <div class="roww" > 
+    <div class="columnn" >
+      <img src="images/dish1.webp" class="zoom" style="width:100%">
+      <img src="images/dish2.webp" class="zoom" style="width:100%">
+      
+    </div>
+    <div class="columnn">
+      <img src="images/dish3.webp" class="zoom" style="width:100%">
+      <img src="images/dish4.jpg" class="zoom" style="width:100%">
+      
+    </div> 
+    <div class="columnn">
+      <img src="images/dish7.jpg" class="zoom" style="width:100%">
+      <img src="images/dish6.jpg" class="zoom"style="width:100%">
+      
+    </div>
+    <div class="columnn">
+      <img src="images/dish5.jpg" class="zoom"style="width:100%">
+      
+    </div>
+  </div>
+
+  <div class="pt-5 ml-5 mr-5">
+    <input type="submit" value="Explore More" id="submit" class="form-control " style="font-size: 24px;font-weight: 600;color: #000000;border: 3px solid #8a7252;">
+    </div>
+
+</section>
+
+
+
+<div class= "footer" id="footer" style="text-align: center;padding-top: 7%;font-size: 20px;background-color: #FFFFFF;color: #000;">
+
+  <div class="container">
+    <div class="row">
+    <div class="col-md-3 fadeInUp ">
+    <div class="d-block text-center block-7 ">
+    <div class="d-flex justify-content-center align-items-center mb-5">
+      <B>VISIT US</B>
+    </div>
+    <div class="media-body mb-5">
+      Kamala Mills Compound,<br> Lower Parel,<br>Mumbai, Maharashtra 400013
+      </div>
+    </div>
+    </div>
+
+    <div class="col-md-3 fadeInUp">
+    <div class="d-block text-center block-7 ">
+    <div class="d-flex justify-content-center align-items-center mb-5">
+      <b>OPENING HOURS</b>
+    </div>
+    <div class="media-body mb-5">
+      Monday to Sunday,<br>10am - 1am<br>For enquiries call <br>+911234567890<br>Or +919876543210
+      </div>
+    </div>
+    </div>
+
+    <div class="col-md-3 fadeInUp">
+      <div class="d-block text-center block-7">
+      <div class="d-flex justify-content-center align-items-center mb-5">
+        <b>DELIVERY</b>
+      </div>
+      <div class="media-body mb-5">
+        Monday – Thursday <br>12pm – 10pm<br><br>Friday – Sunday <br> 12pm – 10.30pm
+        </div>
+      </div>
+      </div>
+
+    <div class="col-md-3 fadeInUp">
+    <div class="d-block text-center block-7">
+    <div class="d-flex justify-content-center align-items-center mb-5">
+      <b>FOLLOW US</b>
+    </div>
+    <div class="media-body mb-5">
+      Instagram<br><a href="#">@TheABCMumbai</a><br>Facebook<br><a href="#">@TheaABCGastropub</a><br>and on <a href="#">Zomato</a>
+      </div>
+    </div>
+    </div>
+    </div>
+    <br><br>
+
+    
+
+    <a href="#" style="color: #77724b;"><i class="fa fa-facebook" style="font-size: 50px;margin-right: 30px;"></i></a>
+    <a href="#" style="color: #77724b;"><i class="fa fa-instagram" style="font-size: 50px;margin-right: 30px;"></i></a>
+    <a href="#" style="color: #77724b;"><i class="fa fa-twitter" style="font-size: 50px;"></i></a>
+    <br><br>
+    </div>
+</div>
+
+
+</body>
+
+
+</html>
+
+
+
